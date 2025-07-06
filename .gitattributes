@@ -1,0 +1,40 @@
+# === NORMALIZACIÓN DE FINALES DE LÍNEA ===
+# Detecta automáticamente archivos de texto y convierte sus EOL a LF en el repo
+* text=auto eol=lf
+
+# Fuerza LF en archivos comunes de Java
+*.java       text eol=lf
+*.xml        text eol=lf
+*.properties text eol=lf
+*.gradle     text eol=lf
+*.md         text eol=lf
+*.txt        text eol=lf
+
+# Archivos por lotes y scripts: respetar su EOL según el SO
+*.sh         text eol=lf
+*.bat        text eol=crlf
+
+# === ARCHIVOS BINARIOS (no tocar EOL ni tratar como texto) ===
+*.jar        binary
+*.war        binary
+*.ear        binary
+*.zip        binary
+*.tar        binary
+*.gz         binary
+*.7z         binary
+*.png        binary
+*.jpg        binary
+*.jpeg       binary
+*.gif        binary
+*.pdf        binary
+*.class      binary
+*.exe        binary
+
+# === GITHUB LINGUIST: excluir archivos de configuración del conteo de lenguaje ===
+.idea/**         linguist-vendored
+*.iml            linguist-vendored
+
+# === DESACTIVAR DIFF PARA ARCHIVOS DE BUILD ===
+target/**        diff=off
+build/**         diff=off
+out/**           diff=off
