@@ -3,9 +3,9 @@ package entity;
 public class EBook extends Book{
     private double fileSize;
     private String fileFormat;
-    public EBook(String isbn, String title, String author, int publicationYear, boolean available, double fileSize,
+    public EBook(String isbn, String title, String author, int publicationYear, double fileSize,
                  String fileFormat) {
-        super(isbn, title, author, publicationYear, available);
+        super(isbn, title, author, publicationYear);
         setFileSize(fileSize);
         setFileFormat(fileFormat);
     }

@@ -7,12 +7,12 @@ public abstract class Book implements Validator{
     private int publicationYear;
     private boolean available;
 
-    public Book(String isbn, String title, String author, int publicationYear, boolean available) {
+    public Book(String isbn, String title, String author, int publicationYear) {
         setIsbn(isbn);
         setTitle(title);
         setAuthor(author);
         setPublicationYear(publicationYear);
-        setAvailable(available);
+        this.available = true;
     }
 
     public String getIsbn() {

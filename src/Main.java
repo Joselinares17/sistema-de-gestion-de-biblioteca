@@ -6,16 +6,11 @@ import repository.BookRepository;
 
 public class Main {
     public static void main(String[] args) {
-        Book book1 = new PrintedBook("LH46-02", "Aventura en el mar", "Juan Romero", 2011,
-                true, "tapa dura", false);
-        Book book2 = new EBook("CS24-12", "Patrones de diseño", "Anónimo", 2011,
-                true, 5.64, "PDF");
-        Book book3 = new PrintedBook("MF87-33", "Historias de la montaña", "Laura Méndez", 2018,
-                false, "rústica", true);
-        Book book4 = new EBook("TR09-58", "Introducción a la inteligencia artificial", "Carlos Ruiz", 2020,
-                true, 3.21, "EPUB");
-        Book book5 = new PrintedBook("BK10-75", "Cuentos del bosque encantado", "María Elena", 2005,
-                true, "tapa blanda", false);
+        Book book1 = new PrintedBook("LH46-02", "Aventura en el mar", "Juan Romero", 2011, "tapa dura", false);
+        Book book2 = new EBook("CS24-12", "Patrones de diseño", "Anónimo", 2011, 5.64, "PDF");
+        Book book3 = new PrintedBook("MF87-33", "Historias de la montaña", "Laura Méndez", 2018, "rústica", true);
+        Book book4 = new EBook("TR09-58", "Introducción a la inteligencia artificial", "Carlos Ruiz", 2020, 3.21, "EPUB");
+        Book book5 = new PrintedBook("BK10-75", "Cuentos del bosque encantado", "María Elena", 2005, "tapa blanda", false);
 
 //        System.out.println("\n" + book1.toString());
 //        System.out.println("\n" + book2.toString());

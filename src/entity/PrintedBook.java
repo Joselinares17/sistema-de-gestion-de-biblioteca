@@ -3,9 +3,9 @@ package entity;
 public class PrintedBook extends Book {
     private String coverType;
     private boolean isColored;
-    public PrintedBook(String isbn, String title, String author, int publicationYear, boolean available,
+    public PrintedBook(String isbn, String title, String author, int publicationYear,
                        String coverType, boolean isColored) {
-        super(isbn, title, author, publicationYear, available);
+        super(isbn, title, author, publicationYear);
         setCoverType(coverType);
         setColored(isColored);
     }
