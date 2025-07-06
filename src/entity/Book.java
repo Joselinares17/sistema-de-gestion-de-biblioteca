@@ -60,8 +60,13 @@ public abstract class Book implements Validator{
     }
 
     @Override
+    public void validateString(String value, String fieldName) {
+        if(value == null || value.isBlank()) throw new IllegalArgumentException("El campo " + fieldName + " es inválido.");
+    }
+
+    @Override
     public void validateNumber(int value, String fieldName) {
-        if(publicationYear < 0 || publicationYear > 2025) {
+        if(value < 0 || value > 2025) {
             throw new IllegalArgumentException("El campo " + fieldName + " es inválido.");
         }
     }
