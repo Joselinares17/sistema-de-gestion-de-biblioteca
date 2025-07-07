@@ -137,13 +137,13 @@ public class Main {
 
         System.out.println("----------------- LibraryReportGenerator -----------------\n");
 
-        LibraryReportGenerator reportGenerator = new LibraryReportGenerator(listRepository);
+        LibraryReportGenerator reportGenerator = new LibraryReportGenerator(arrRepository);
 
         System.out.println(reportGenerator.generateReport());
 
         System.out.println("---------");
 
-        System.out.println(reportGenerator.generateFilteredReport(new AuthorBookFilter("Juan Romero")));
+        System.out.println(reportGenerator.generateFilteredReport(new AuthorBookFilter("Ricardo Salas")));
 
         System.out.println("---------");
 
